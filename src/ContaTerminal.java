@@ -10,26 +10,24 @@ public class ContaTerminal {
         System.out.print("Por favor, digite o número da agência: ");
         int numeroAgencia = scanner.nextInt();
         contaUsuario.setNumero(numeroAgencia);
+        scanner.nextLine();
 
         System.out.print("Por favor, digite a agência: ");
-        String agencia = scanner.next();
+        String agencia = scanner.nextLine();
         contaUsuario.setAgencia(agencia);
 
         System.out.print("Por favor, digite o nome do cliente: ");
-        String nomeCliente = scanner.next();
+        String nomeCliente = scanner.nextLine();
         contaUsuario.setNomeCliente(nomeCliente);
 
         System.out.print("Por favor, digite o saldo da conta: ");
         double saldo = scanner.nextDouble();
         contaUsuario.setSaldo(saldo);
 
-        // TODO: Conhecer e importar a classe Scanner
-
-        // Exibir as mensagens para o usuário
-
-        // Obter pela classe Scanner os valores digitados no terminal
-
-        // Exibir a mensagem da conta criada
+        System.out.println("Olá " + contaUsuario.getNomeCliente() + ", obrigado por criar uma conta em " +
+                "nosso banco" + ", sua agência é " + contaUsuario.getAgencia() + ", " +
+                "conta " + contaUsuario.getNumero() + " e seu saldo de R$ " + contaUsuario.getSaldo() +
+                " já está disponível para saque");
 
     }
 }
