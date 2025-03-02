@@ -15,7 +15,7 @@ public class Conta {
 
 
     /**
-     * Este método permite configurar/atribuir o número da conta bancária
+     * Este método permite configurar/atribuir o número da agência
      * @param numero Este é o único parâmetro do método
      * */
     public void setNumero(int numero) {
@@ -47,7 +47,7 @@ public class Conta {
     }
 
     /**
-     * Este método permite retornar o número da conta bancária
+     * Este método permite retornar o número da agência
      * @return int o número da conta bancária
      * */
     public int getNumero() {
